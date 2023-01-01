@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Spline+Sans+Mono:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+section {
+    /* height: 30em; */
+    /* height: 500px; */
+    height: 80vh;
+    width: 100%;
+}
+
+.main-container {
+    /* display: flex; */
+    flex-direction: column;
+    background-color: rgba(0, 0, 255, 0.76);
+    text-align: center;
+    width: 80%;
+    height: 100%;
+    margin: 3em auto 0 auto;
+    padding: 1em;
+    border-radius: 10px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 3rem;
+    text-align: center;
+    margin-top: .3em;
+    color: #fdfdfd;
+    text-shadow: 2px 2px 6px rgb(255, 166, 0);
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fdfdfd;
+    height: 70%;
+    width: 70%;
+    margin: 1em auto 0 auto;
+    padding: 1em;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.801) 0px 5px 25px;
+}
+
+p {
+    /* background-color: aqua; */
+    font-family: 'Poppins', sans-serif;
+    /* padding: .2em; */
+    text-align: center;
+    font-size: 1.3rem;
+    margin-bottom: 1em;
+}
+
+button {
+    position: absolute;
+    bottom: 2em;
+    /* transform: translate(-50%,-50%); */
+    padding: .6em 2em;
+    border-radius: 5px;
+    border: 2px solid black;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    font-size: 1rem;
+
+}
+
+button:hover {
+    background-color: #3d3dff96;
+    box-shadow: rgba(0, 0, 0, 0.356) 0px 3px 8px;
+
+}
+
+@media screen and (max-width: 755px) {
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+    button{
+        font-size:.7rem 
+    }
+    .container{
+        margin-top: 2em;
+    }
+}
+
+@media screen and (max-width: 516px) {
+    h1 {
+        font-size: 1.7rem;
+    }
+
+    p {
+        font-size: .8rem;
+    }
+    .container{
+        height: 60%;
+        
+    }
+}
+
+@media screen and (max-width: 445px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: .8rem;
+    }
+
+    .container{
+        margin-top: 3em;
+        width:100%
+    }
+
+
+}
+
+@media screen and (max-width: 400px) {
+    h1 {
+        margin-top: 1em;
+        font-size: 1.3rem;
+    }
+
+    p {
+        font-size: .8rem;
+    }
+
+    .container{
+        width: 100%;
+        margin-top: 3em
+        
+    }
+
+
+}
